@@ -1,0 +1,12 @@
+question 1 of module 2
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Downloads
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Downloads$ ls
+'2025_Linux_Training_Program (1).pptx'           2025_Linux_Training_Program_Module_2.pptx                 led_detection.py      'position_hold(2).py'
+'2025_Linux_Training_Program_Module_1(1).pptx'  'Campus Hires 2025 – Linux - Assessment Module 1-5.pptx'   output.txt            'position_hold(3).py'
+ 2025_Linux_Training_Program_Module_1.pptx       google-chrome-stable_current_amd64.deb                   'position_hold(1).py'   position_hold.py
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Downloads$ find . -type f -size +1M > output.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Downloads$ cat output.txt
+./google-chrome-stable_current_amd64.deb
+
+

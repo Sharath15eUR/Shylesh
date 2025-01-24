@@ -1,0 +1,15 @@
+question 2 of module2
+
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ touch config.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ echo -e "shylesh = localhost\nlocalhost = IEEE802.11\nthe localhost is expired" > config.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ cat config.txt
+shylesh = localhost
+localhost = IEEE802.11
+the localhost is expired
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ cat updated_config.txt
+shylesh = 127.0.0.1
+127.0.0.1 = IEEE802.11
+the 127.0.0.1 is expired
+

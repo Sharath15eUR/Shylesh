@@ -1,0 +1,12 @@
+question5 of module2
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ netstat -rn
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
+0.0.0.0         192.168.166.152 0.0.0.0         UG        0 0          0 wlo1
+169.254.0.0     0.0.0.0         255.255.0.0     U         0 0          0 wlo1
+192.168.166.0   0.0.0.0         255.255.255.0   U         0 0          0 wlo1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module2$ netstat -rn | awk '{print $2}' |sort
+0.0.0.0
+0.0.0.0
+192.168.166.152
