@@ -1,0 +1,13 @@
+question1 of module1
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Desktop
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ mkdir Shylesh_LinuxTraining_Module1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ cd Shylesh_LinuxTraining_Module1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ touch ques1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ ls
+ques1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ chmod 777 ques1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ ls -l
+total 0
+-rwxrwxrwx 1 shylesh shylesh 0 Jan 23 08:35 ques1
+

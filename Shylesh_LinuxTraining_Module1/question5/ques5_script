@@ -1,0 +1,22 @@
+question5 of module1
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ mkdir dir1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ cd dir1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch file1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch file2
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch file3
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch -t 202501230901 file1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch -t 202501230902 file2
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ touch -t 202501230903 file3
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ cd 
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Desktop/Shylesh_LinuxTraining_Module1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ ls -lt dir1 > dir1/final.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ cat dir1/final.txt
+total 0
+-rw-rw-r-- 1 shylesh shylesh 0 Jan 23 09:32 final.txt
+-rw-rw-r-- 1 shylesh shylesh 0 Jan 23 09:03 file3
+-rw-rw-r-- 1 shylesh shylesh 0 Jan 23 09:02 file2
+-rw-rw-r-- 1 shylesh shylesh 0 Jan 23 09:01 file1
+
+
+

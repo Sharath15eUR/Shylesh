@@ -1,0 +1,9 @@
+question2 of module1
+
+hylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ touch ques2
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ chmod 757 ques2
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ ls -l
+total 4
+-rwxr-xrwx 1 shylesh shylesh    0 Jan 23 08:42 ques2
+drwxrwxr-x 2 shylesh shylesh 4096 Jan 23 08:41 question1
+

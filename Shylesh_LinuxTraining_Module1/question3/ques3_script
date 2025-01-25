@@ -1,0 +1,11 @@
+question3 of module1
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ mkdir -p dir1/dir2
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ echo "hi,hello" > dir1/dir2/ques3
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1$ cd dir1
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ ln -s dir2/ques3 ques3_link
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/Shylesh_LinuxTraining_Module1/dir1$ ls -l 
+total 4
+drwxrwxr-x 2 shylesh shylesh 4096 Jan 23 09:12 dir2
+lrwxrwxrwx 1 shylesh shylesh   10 Jan 23 09:14 ques3_link -> dir2/ques3
+
