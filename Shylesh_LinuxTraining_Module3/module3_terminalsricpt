@@ -1,0 +1,43 @@
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Desktop
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ cd module3
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3$ nano backup_manager.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3$ chmod 777  backup_manager.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3$ ./backup_manager.sh ~/Desktop/source  ~/Desktop/module3/backup .py
+Files that match the given extention are:
+ /home/shylesh/Desktop/source/dictionary.py  '/home/shylesh/Desktop/source/loop example2.py'		    '/home/shylesh/Desktop/source/return ex2.py'
+ /home/shylesh/Desktop/source/example3.py    '/home/shylesh/Desktop/source/loop in function.py'		    '/home/shylesh/Desktop/source/return examples.py'
+'/home/shylesh/Desktop/source/example 4.py'  '/home/shylesh/Desktop/source/loop new case.py'		     /home/shylesh/Desktop/source/return.py
+ /home/shylesh/Desktop/source/example5.py    '/home/shylesh/Desktop/source/loop range concept.py'	     /home/shylesh/Desktop/source/set.py
+ /home/shylesh/Desktop/source/intro.py	     '/home/shylesh/Desktop/source/nested loop ex2.py'		     /home/shylesh/Desktop/source/tuple.py
+ /home/shylesh/Desktop/source/lists.py	     '/home/shylesh/Desktop/source/odd or even using functions.py'   /home/shylesh/Desktop/source/variables.py
+Files to be backed up:
+/home/shylesh/Desktop/source/dictionary.py (948 bytes)
+/home/shylesh/Desktop/source/example3.py (206 bytes)
+/home/shylesh/Desktop/source/example 4.py (345 bytes)
+/home/shylesh/Desktop/source/example5.py (112 bytes)
+/home/shylesh/Desktop/source/intro.py (385 bytes)
+/home/shylesh/Desktop/source/lists.py (620 bytes)
+/home/shylesh/Desktop/source/loop example2.py (143 bytes)
+/home/shylesh/Desktop/source/loop in function.py (287 bytes)
+/home/shylesh/Desktop/source/loop new case.py (40 bytes)
+/home/shylesh/Desktop/source/loop range concept.py (82 bytes)
+/home/shylesh/Desktop/source/nested loop ex2.py (149 bytes)
+/home/shylesh/Desktop/source/odd or even using functions.py (426 bytes)
+/home/shylesh/Desktop/source/return ex2.py (281 bytes)
+/home/shylesh/Desktop/source/return examples.py (378 bytes)
+/home/shylesh/Desktop/source/return.py (268 bytes)
+/home/shylesh/Desktop/source/set.py (258 bytes)
+/home/shylesh/Desktop/source/tuple.py (149 bytes)
+/home/shylesh/Desktop/source/variables.py (264 bytes)
+Automation Script Successfully Completed and Report Log successfully saved
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3$ cd backup
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3/backup$ ls
+ backup_report.log   example3.py     example5.py   lists.py           'loop in function.py'  'loop range concept.py'  'odd or even using functions.py'  'return examples.py'   set.py     variables.py
+ dictionary.py      'example 4.py'   intro.py     'loop example2.py'  'loop new case.py'     'nested loop ex2.py'     'return ex2.py'                    return.py             tuple.py
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module3/backup$ cat backup_report.log
+
+Back Up Report : 
+Date of Backup : Tuesday 28 January 2025 02:05:51 PM IST
+*************************************
+Total number of files processed : 18
+Total size of files processed : 5341
