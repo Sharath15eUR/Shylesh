@@ -1,0 +1,51 @@
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Desktop
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ cd module4
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ ls
+input.txt  output.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ chmod 744 input.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ chmod 744 output.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ ls -l
+total 158740
+-rwxr--r-- 1 shylesh shylesh 162538952 Jan 30 10:24 input.txt
+-rwxr--r-- 1 shylesh shylesh       711 Jan 30 17:54 output.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ ./output.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ cat input.txt | grep -c -w "frame.time"
+3225
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ cat input.txt | grep -c -w "wlan.fc.type"
+3225
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ cat input.txt | grep -c -w "wlan.fc.subtype"
+3225
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ wc -l output.txt
+9675 output.txt
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop/module4$ head -30 output.txt 
+"frame.time": "Dec 31, 2024 12:50:25.890970000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.892357000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.928606000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.983072000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.983586000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.993337000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:25.994324000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:26.030963000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:26.085310000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+"frame.time": "Dec 31, 2024 12:50:26.085817000 India Standard Time",
+"wlan.fc.type": "0",
+"wlan.fc.subtype": "8",
+
