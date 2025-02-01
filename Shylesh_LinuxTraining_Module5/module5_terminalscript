@@ -1,0 +1,25 @@
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ cd Desktop
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ nano file_analyzer.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ chmod 777 file_analyzer.sh
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ ./file_analyzer.sh -d logs -k animal
+logs/file1.txt:1:animal kingdom is the largest kingdom of the world
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ ./file_analyzer.sh -f logs/file2.txt -k worst
+logs/file2.txt:2:if not it should be worst
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ ./file_analyzer.sh --help
+Usage: ./file_analyzer.sh [OPTIONS]
+
+Options:
+  -d <directory>   Search for a keyword recursively in a directory.
+  -k <keyword>     Keyword to search for.
+  -f <file>        Search for a keyword in a specific file.
+  --help           Display this help menu.
+
+Examples:
+  ./file_analyzer.sh -d logs -k error
+  ./file_analyzer.sh -f script.sh -k TODO
+  ./file_analyzer.sh --help
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~/Desktop$ cat errors.log
+logs/file1.txt:1:animal kingdom is the largest kingdom of the world
+logs/file2.txt:2:if not it should be worst
+Error: No arguments provided. Use './file_analyzer.sh --help' for usage details.
+Error: Keyword must not be empty.
