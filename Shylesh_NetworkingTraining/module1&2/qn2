@@ -1,0 +1,96 @@
+Question-2:
+
+Host a ftp and sftp server and try PUT and GET options.
+
+ftp:
+FTP is a file transfer protocol used to transfer files between remote and local system or server.
+
+GET COMMAND:
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ ftp 192.168.166.229
+Connected to 192.168.166.229.
+220 (vsFTPd 3.0.5)
+Name (192.168.166.229:shylesh): shylesh
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> cd Desktop
+250 Directory successfully changed.
+ftp> pwd
+257 "/home/shylesh/Desktop" is the current directory
+ftp> ls
+200 PORT command successful. Consider using PASV.
+150 Here comes the directory listing.
+drwxrwxr-x    4 1000     1000         4096 Mar 13 14:14 LinuxTraining
+-rw-rw-r--    1 1000     1000         3329 Feb 02 15:59 Shylesh_LinuxTraining_Module5.zip
+drwxrwxr-x    6 1000     1000         4096 Mar 13 14:14 Shylesh_linuxTraining
+-rw-------    1 1000     1000            1 Feb 17 14:52 add.sh.save
+-rw-rw-r--    1 1000     1000           84 Jan 25 09:49 github
+-rw-rw-r--    1 1000     1000          646 Mar 13 16:17 netassign
+drwxrwxr-x    7 1000     1000         4096 Nov 03  2023 ns-allinone-3.31
+-rw-rw-r--    1 1000     1000     27802510 Nov 03  2023 ns-allinone-3.31.tar.bz2
+-rw-rw-r--    1 1000     1000        12054 Jan 28 13:17 python_notes.zip
+-rw-rw-r--    1 1000     1000         2368 Mar 13 16:39 qn1
+-rwxrwxrwx    1 1000     1000          111 Feb 17 17:33 rev.sh
+-rwxrwxrwx    1 1000     1000          150 Feb 17 17:37 rev1.sh
+drwxrwxr-x    2 1000     1000         4096 Mar 13 16:40 samplefolder
+226 Directory send OK.
+ftp> get rev1.sh
+local: rev1.sh remote: rev1.sh
+200 PORT command successful. Consider using PASV.
+150 Opening BINARY mode data connection for rev1.sh (150 bytes).
+226 Transfer complete.
+150 bytes received in 0.01 secs (27.4830 kB/s)
+
+PUT COMMAND:
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ ftp 192.168.166.229
+Connected to 192.168.166.229.
+220 (vsFTPd 3.0.5)
+Name (192.168.166.229:shylesh): shylesh
+331 Please specify the password.
+Password:
+230 Login successful.
+Remote system type is UNIX.
+Using binary mode to transfer files.
+ftp> put rev1.sh
+local: rev1.sh remote: rev1.sh
+200 PORT command successful. Consider using PASV.
+150 ok to send data.
+226 transfer completed.
+ftp: 39666 bytes sent in 0.00seconds 11254.00kbytes/sec
+
+
+SFTP:
+SFTP is the Secure File Transfer Protocol which uses encryption while transfer of files thereby ensuring security which is not available in FTP.
+
+GET COMMAND:
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ sftp shylesh@192.168.166.229
+The authenticity of host '192.168.166.229 (192.168.166.229)' can't be established.
+ECDSA key fingerprint is SHA256:nVP9vwJbGS3T6oqhf2gr+7C50rBLxXo1l6xpV9hu670.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added '192.168.166.229' (ECDSA) to the list of known hosts.
+shylesh@192.168.166.229's password: 
+Connected to 192.168.166.229.
+sftp> cd Desktop
+sftp> get rev1.sh
+Fetching /home/shylesh/Desktop/rev1.sh to rev1.sh
+/home/shylesh/Desktop/rev1.sh                 100%  150   105.0KB/s   00:00 
+
+PUT COMMAND:
+
+shylesh@shylesh-VivoBook-ASUSLaptop-X515EA-X515EA:~$ sftp shylesh@192.168.166.229
+shylesh@192.168.166.229's password: 
+Connected to 192.168.166.229.
+sftp> cd shylesh
+Couldn't stat remote file: No such file or directory
+sftp> cd Desktop
+sftp> pwd
+Remote working directory: /home/shylesh/Desktop
+sftp> put rev1.sh
+Uploading rev1.sh to /home/shylesh/Desktop/rev1.sh
+rev1.sh                                       100%  150     4.0KB/s   00:00 
+
+

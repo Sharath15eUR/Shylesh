@@ -1,0 +1,19 @@
+VNC Viewer:
+
+    Uses the RFB (Remote Framebuffer Protocol) for remote screen sharing.
+    Requires a VNC Server on the remote machine and is best for local network access.
+
+Remote Desktop Connection (RDP):
+
+    Built-in for Windows, optimized for Windows-to-Windows remote access.
+    Supports encrypted connections with Network Level Authentication (NLA).
+
+AnyDesk:
+
+    Uses DeskRT codec for fast, low-latency remote access.
+    Supports cross-platform access with secured encryption.
+
+TeamViewer:
+
+    No port forwarding needed, works through firewalls for easy remote access.
+    Supports multi-user sessions, file transfer, and remote meetings.

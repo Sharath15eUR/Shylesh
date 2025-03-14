@@ -1,0 +1,12 @@
+-->Telnet (short for Telecommunication Network) is a network protocol used to establish a remote 
+connection to a server or device over a TCP/IP network. 
+-->It operates on port 23 by default and allows users to access and manage remote systems via a command-line interface (CLI). 
+-->Although it is a simple and lightweight protocol, Telnet is considered insecure because data, including passwords, 
+is transmitted in plaintext, making it vulnerable to interception. 
+-->Due to its lack of encryption, it has largely been replaced by SSH (Secure Shell) for secure remote access. 
+-->Telnet is still useful for testing and troubleshooting network services, as it can connect to any server and 
+interact with various network protocols. 
+-->In Linux, the Telnet client can be used with the telnet command to initiate a connection to a specified IP address 
+or hostname. 
+-->Despite being deprecated in favor of more secure alternatives, Telnet remains an important tool in legacy systems
+ and educational environments.
